@@ -36,6 +36,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 - 🗜️ Map vs filter vs reduce
 
 ###
+
 <Tabs defaultValue="learn">
 
 <TabsList>
@@ -47,30 +48,26 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
      ## 📺 Watch Now
 
 <div className="w-full h-full">
-   <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY"/>
+  <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY" />
 </div>
 
-
 <Callout type="info">
-   👨‍💻📝 Now that you have completed the JavaScript tutorial video and reviewed the JavaScript cheat sheet, it's time to put your knowledge into practice by completing the JavaScript assignments. 🚀
+  👨‍💻📝 Now that you have completed the JavaScript tutorial video and reviewed
+  the JavaScript cheat sheet, it's time to put your knowledge into practice by
+  completing the JavaScript assignments. 🚀
 </Callout>
 
 </TabsContent>
 
 <TabsContent value="assignment">
 
- ### 📌🔨 Task
-    - Complete JavaScript basics challenges from this website https://www.jschallenger.com/javascript-practice
+### 📌🔨 Task
 
-    ### ❓Unclear with concepts? 📺 Watch This
-    <div key="htmlVideo" align="center">
-       <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY"/>
-    </div>
+    - Complete JavaScript basics challenges from this website https://www.jschallenger.com/javascript-practice
 
 </TabsContent>
 
 </Tabs>
-
 
 ## Notes
 
@@ -104,7 +101,7 @@ You can print to the console in JavaScript using the **`console.log()`** functio
 console.log("Hello, world!");
 ```
 
-### ****Variables in JavaScript****
+### \***\*Variables in JavaScript\*\***
 
 Variables in JavaScript can be declared using **`let`**, **`const`**, or **`var`**.
 
@@ -147,7 +144,7 @@ let z = --x; // decrement
 let a = -x; // negation
 ```
 
-### ****Conditional operators****
+### \***\*Conditional operators\*\***
 
 JavaScript supports conditional operators such as greater than, less than, equal to, and not equal to:
 
@@ -193,7 +190,7 @@ switch (day) {
 }
 ```
 
-### ****Data types in JavaScript****
+### \***\*Data types in JavaScript\*\***
 
 JavaScript supports several data types, such as string, number, boolean, null, and undefined:
 
@@ -209,7 +206,7 @@ let b = undefined; // undefined
 
 ```jsx
 // Declaring an array
-let fruits = ['apple', 'banana', 'orange'];
+let fruits = ["apple", "banana", "orange"];
 
 // Accessing elements of an array
 console.log(fruits[0]); // Output: 'apple'
@@ -217,7 +214,7 @@ console.log(fruits[1]); // Output: 'banana'
 console.log(fruits[2]); // Output: 'orange'
 
 // Adding an element to the end of an array
-fruits.push('grape');
+fruits.push("grape");
 console.log(fruits); // Output: ['apple', 'banana', 'orange', 'grape']
 
 // Removing the last element of an array
@@ -225,7 +222,7 @@ fruits.pop();
 console.log(fruits); // Output: ['apple', 'banana', 'orange']
 
 // Adding an element to the beginning of an array
-fruits.unshift('grape');
+fruits.unshift("grape");
 console.log(fruits); // Output: ['grape', 'apple', 'banana', 'orange']
 
 // Removing the first element of an array
@@ -233,8 +230,8 @@ fruits.shift();
 console.log(fruits); // Output: ['apple', 'banana', 'orange']
 
 // Finding the index of an element in an array
-console.log(fruits.indexOf('banana')); // Output: 1
-console.log(fruits.indexOf('grape')); // Output: -1 (not found)
+console.log(fruits.indexOf("banana")); // Output: 1
+console.log(fruits.indexOf("grape")); // Output: -1 (not found)
 ```
 
 ### Objects
@@ -244,18 +241,18 @@ An object is a collection of key-value pairs. The key is a string and the value 
 ```jsx
 // Object using object literal notation
 const person = {
-  name: 'John Doe',
+  name: "John Doe",
   age: 30,
-  city: 'New York'
+  city: "New York",
 };
 
 // Accessing object properties
 console.log(person.name); // John Doe
-console.log(person['age']); // 30
+console.log(person["age"]); // 30
 
 // Adding or updating object properties
-person.email = 'johndoe@example.com';
-person['phone'] = '123-456-7890';
+person.email = "johndoe@example.com";
+person["phone"] = "123-456-7890";
 console.log(person); // { name: 'John Doe', age: 30, city: 'New York', email: 'johndoe@example.com', phone: '123-456-7890' }
 ```
 
@@ -271,9 +268,9 @@ for (let i = 0; i < 5; i++) {
 
 // For/in loop for iterating over object properties
 const person = {
-  name: 'John Doe',
+  name: "John Doe",
   age: 30,
-  city: 'New York'
+  city: "New York",
 };
 
 for (let prop in person) {
@@ -281,7 +278,7 @@ for (let prop in person) {
 }
 
 // For/of loop for iterating over iterable objects
-const fruits = ['apple', 'banana', 'orange'];
+const fruits = ["apple", "banana", "orange"];
 
 for (let fruit of fruits) {
   console.log(fruit);
@@ -289,8 +286,8 @@ for (let fruit of fruits) {
 // There is difference b/w for(let fruit in fruits) vs as shown above
 // `for...in` is used to iterate over properties of objects whereas `for...of` will iterate over values
 
-for(let fruit in fruits){
-  console.log(fruit); // O/P: 0 1 2 
+for (let fruit in fruits) {
+  console.log(fruit); // O/P: 0 1 2
 }
 
 // forEach method for iterating over arrays
@@ -366,7 +363,7 @@ console.log(result); // 5
 
 ```jsx
 const numbers = [1, 2, 3];
-const doubled = numbers.map(num => num * 2);
+const doubled = numbers.map((num) => num * 2);
 console.log(doubled); // [2, 4, 6]
 ```
 
@@ -376,16 +373,16 @@ console.log(doubled); // [2, 4, 6]
 
 ```jsx
 const numbers = [1, 2, 3];
-const even = numbers.filter(num => num % 2 === 0);
+const even = numbers.filter((num) => num % 2 === 0);
 console.log(even); // [2]
 ```
 
 ### Reduce method
 
 **`reduce()`** applies a function to each element of an array, resulting in a single output value.
+
 ```jsx
 const numbers = [1, 2, 3];
 const sum = numbers.reduce((total, num) => total + num, 0);
 console.log(sum); // 6
 ```
-
